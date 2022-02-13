@@ -69,9 +69,7 @@ jobs:
               sudo apt-get update
               sudo apt-get install google-chrome-stable
       - name: Run Integration Test
-        run:  npx @percy/cli exec -- ./gradlew integrationTest
-        env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run:  ./gradlew integrationTest
       - name: Upload Test Report
         uses: actions/upload-artifact@v2
         if:   failure()
