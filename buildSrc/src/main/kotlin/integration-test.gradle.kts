@@ -1,10 +1,10 @@
 // refs https://docs.gradle.org/current/userguide/java_testing.html
 
 plugins {
-    `java`
+    java
 }
 
-val integrationTest by sourceSets.creating {
+val integrationTest: SourceSet by sourceSets.creating {
     java.srcDir("src/integration-test/java")
 }
 
