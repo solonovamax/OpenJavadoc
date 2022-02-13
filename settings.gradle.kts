@@ -1,6 +1,6 @@
 plugins { id("com.gradle.enterprise") version "3.8.1" }
 
-rootProject.name = "javadocky"
+rootProject.name = "OpenJavadoc"
 
 gradleEnterprise {
     buildScan {
