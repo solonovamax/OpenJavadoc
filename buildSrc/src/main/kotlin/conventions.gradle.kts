@@ -1,12 +1,6 @@
-import org.sonarqube.gradle.SonarQubeTask
-
 plugins {
     java
     jacoco
-    id("com.diffplug.spotless")
-    id("de.undercouch.download")
-    id("net.ltgt.errorprone")
-    id("org.sonarqube")
 }
 
 val jacocoTestReport = tasks.jacocoTestReport {
@@ -32,14 +26,9 @@ tasks {
     withType<JavaCompile> {
         options.release.set(17)
     }
-    withType<SonarQubeTask> {
-        dependsOn(jacocoTestReport)
-    }
 }
 
 dependencies {
-    errorprone("com.google.errorprone:error_prone_core:2.11.0")
-    errorprone("jp.skypencil.errorprone.slf4j:errorprone-slf4j:0.1.6")
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude("junit", "junit")
@@ -53,17 +42,5 @@ dependencies {
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
-    }
-}
-
-spotless {
-    java {
-        removeUnusedImports()
-        googleJavaFormat()
-    }
-    kotlinGradle {
-        target("*.gradle.kts")
-        ktlint()
-        indentWithSpaces()
     }
 }
