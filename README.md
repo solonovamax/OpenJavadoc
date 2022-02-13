@@ -1,4 +1,38 @@
-# javadocky
+# Open JavaDoc
+
+A FOSS clone of [javadoc.io](https://javadoc.io/).
+
+Ths project is a fork of [javadocky](https://github.com/KengoTODA/javadocky/), as the author was not very welcoming to contributions or suggestions regarding their software.
+It is forked from commit `75155b8fa101c8770c0f756d6523fd29b269aacc`, as all code after that was relicensed under the AGPL instead of the Apache license.
+
+## TODO
+
+- [ ] Rewrite README
+- [ ] Ability to specify multiple javadoc sources.
+   See: [javadocky#295](https://github.com/KengoTODA/javadocky/issues/295)
+- [ ] Simple UI Changes
+   See: [javadocky#294](https://github.com/KengoTODA/javadocky/issues/294)
+   - [ ] Left align group and artifact labels
+   - [ ] Replace name with home button
+   - [ ] Button to ease linking to the javadoc
+   - [ ] Custom icon
+   - [ ] Custom homepage text
+   - [ ] Input gradle artifact coordinates
+   - [ ] Button to download javadoc jar
+- [ ] Finish badge generator
+   See: [javadocky#293](https://github.com/KengoTODA/javadocky/issues/293)
+- [ ] Support all shields.io styles and parameters
+   See: [javadocky#292](https://github.com/KengoTODA/javadocky/issues/292)
+- [ ] Modify page URL when navigating javadoc
+   See: [javadocky#291](https://github.com/KengoTODA/javadocky/issues/291)
+- [ ] Remove scroll bar outside of embeded iframe
+   See: [javadocky#290](https://github.com/KengoTODA/javadocky/issues/290)
+- [ ] Include artifact in dropdown on first load of page
+  See: [javadocky#289](https://github.com/KengoTODA/javadocky/issues/289)
+- [ ] No other artifacts are presented if no other repositories with the same group id have been loaded.
+  See: [javadocky#288](https://github.com/KengoTODA/javadocky/issues/288)
+
+# Old README
 
 This project is a clone of [javadoc.io](http://javadoc.io/).
 This is also a sandbox project to play with spring-boot v2.5.2, spring-webflux v5.3.8 and selenide v5.2.8.
