@@ -46,6 +46,8 @@ dependencies {
     implementation("org.codehaus.janino:janino")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     
+    implementation("ca.solo-studios:slf4k:0.4.6")
+    
     "integrationTestImplementation"(project)
     "integrationTestImplementation"("org.junit.jupiter:junit-jupiter-api")
     "integrationTestImplementation"("io.github.bonigarcia:selenium-jupiter:3.3.0")
